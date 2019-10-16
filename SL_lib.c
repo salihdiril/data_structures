@@ -114,84 +114,6 @@ void insertCity(struct Cities * first, int size){
     temp = 0;
 }
 
-/* void sortPerson(struct Person * root){
-    
-    int count1,count2,index,i ;
-    struct Person * temp = root;
-    struct Person * p,* q,* tail;
-    char min[20] = "zzzzzzzzzzzzz";
-    
-    index = 0;
-    count1 = 0;
-    count2 = 0;
-    p = root; // i used this variable for change the node's place
-    q = root; //i used this variable for change the node's place
-    tail = root; // i used this variable for learning the order of the node that has min ASCII value
-    
-    
-    while(temp -> next){
-        
-        
-        
-        while(tail){
-            
-            count2++;
-        
-            if(strcmp(tail->surname,min)<0){
-            
-                strcpy(min,tail->surname);
-                count1++;
-                index = count2; //we can know by this statement that the min string changed index. node
-            }
-            
-            tail = tail -> next;
-        }
-                
-        //if count == 1 than it means min change its value only 1 time and any string will come first if we compare it with min by strcmp function. So first node will be already sorted.
-        if( count1 == 1){
-            
-            temp = temp -> next;
-        }
-        
-        if(count1 != 1){
-            
-            
-            for(i=0; i<index - 2; i++){ //if we want to arrive index. node we should jump index - 1 times but i want to arrive (index - 1). node 
-                
-                
-                p = p -> next;
-                
-            }
-            
-            if(p -> next -> next){
-                
-                q -> next = temp ;
-                p -> next = p -> next -> next;
-                temp = q;
-            }
-            else{
-                
-                
-                q -> next = temp;
-                temp = q;
-                p -> next = 0;
-                
-            }
-            
-            temp = temp -> next;
-            
-            q = temp;
-            p = temp;
-            tail = temp;
-            count2 = 0;
-            count1 = 0;
-            index = 0;
-            strcpy(min,"zzzzzzzzzzzzz");
-        }
-    }
-}
-            
-    */
 
 struct Person * deletePerson(struct Person * root, int telephone){
     
@@ -272,7 +194,7 @@ struct Cities * deleteCities(struct Cities * root, int code){
     return root;
 }
 
-//Sir, you didn't mention us by which criter we will search persons in the list.
+
 //ı used telephone number for search criter because only telephone number is different for all person.
 void searchPerson(struct Person * root, int telephone){
     
