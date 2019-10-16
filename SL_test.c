@@ -39,16 +39,7 @@ int main(){
                     printf("how many person do you want to add ?\n");
                     scanf("%d",&size);
                     insertPerson(root,size);
-                    //sortPerson(root);  //ilk başta girdiğim kişiler kendi kendine sıralansın şeklişnde algritma yazmayı denedim olmadı.
-                                        //sonra ben rastgele gireyim ondan sonra onu sıralarım dedim 7-8 saatimi harcadım sırf sıralama için 
-                                        //yine olmadı, yapamadım. Kodum çalışmasa da buraya yoruma alıp bıraktım. kontrol edebilirsiniz.
-                                        //Bu ödevi yapmaya cuma günü başladım ve önceki sene veri yapıları dersini çalışmadığım için anlamadığım bir konuydu //bu. Konuyu bu ödevi yaparken öğrenmeye başladığım için aklımdaki algoritmayı koda aktarmayı düşünmek çok zamanımı 
-                                        //alıyor ve 1 saat düşünüp sonunda kodunu yazdıp çalıltırdığımda segmentation fault almak da cabası. Bazen seg. fault
-                                        //hatasını çözmek 2 saatimi alıyor. Bazen de 2 saat uğraştıktan sonra hatayı bulamayıp baştan farklı bir çözüm yolu
-                                        //arıyorum.Nitekim alfabetik sıralamada öyle oldu ve yapamadım yine de. cumadan salıya kadar başka bir ders 
-                                        //çalışmadım.
-                                        //şuan salı ve ben hala daha SL deyim. o yüzden bundan sonrakilerde sıralamaya önem vermeden sadece 
-                                        //ödevi bitirmeye odaklanıcam.
+                  
                     
                     printf("\nChoose an operation number\n");
                     scanf("%d",&option);
@@ -66,7 +57,7 @@ int main(){
                 
                 case 3:
                     
-                    //hocam kişileri girdikten sonra şehirleri de giriniz ve öyle silme işlemini yapınız.
+                    //kişileri girdikten sonra şehirleri de giriniz ve öyle silme işlemini yapınız.
                     //yoksa segmentation fault alır çünkü silinenleri görmek için 7 ye tıklarsanız şehirlerin kodunu almaya çalışacak
                     //ama şehir girmediğiniz için segmentation fault  olacak.
                 
