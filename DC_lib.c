@@ -291,7 +291,7 @@ void displayCities(struct Cities * first){
 }
 /*
  * 
- * hocam bu kodu doubly circular linked list mantığı ile yazdım ve display ederken eğer p = p -> prev ya da temp = temp -> prev dersem sorunsu çalışıyor
+ * bu kodu doubly circular linked list mantığı ile yazdım ve display ederken eğer p = p -> prev ya da temp = temp -> prev dersem sorunsuz çalışıyor
  * ancak yukarıdaki display fonksiyonlarında yapınca segmentation fault alıyorum. iki fonksiyonu da aynı mantık ile yazdım ama alttaki çalışıyor yukarıdaki segmentaion fault hatası veriyor. yaklaşık 2 saat boyunca neden bu hatayı aldığımı anlamaya çalıştım. segmentation fault hatası bildiğim kadarıyla pointerın yanlış bir yeri (bizim belirtmediğimiz bir yeri) gösterdiğinde oluyor. Bu hatanın nedenini anlamak için defalarca koduma bakarak linked listi görselleştirerek çizdim ve kodumda bir hata bulamadım. En son baştan bir kod yazdım doğru olduğunu kabul ettiğim mantığımla ve çalıştı. yani algoritmamda bir sorun yok ama yukarıdaki fonksiyonlarda  p = p -> prev yaparsam segmentation fault veriyor. ben de p = p -> next yaptım kodu ve hatasız çalıştı.
 
 #include <stdio.h>
